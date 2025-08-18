@@ -63,4 +63,34 @@ else:
 print(v)
 
 for _ in range(3, 6):
-    p = 3 + (_ - 2) * 3
+    p = 3 + (_ - 2) * 2
+    if _ == 4:
+        print(p)
+
+start = 5
+x = start
+while True:
+    y = 9 + (x - 5) * 3
+    if x == 11:
+        print(y)
+        break
+    else:
+        x += 1
+
+n = 1
+while True:
+    if ( n ** 3 - 16 ) % 47 == 0:
+        break
+    n += 1
+print(n)
+
+x = int(input('give nonnegative integers a: '))
+v = 1
+while True:
+    if x > 0:
+        v *= 3
+        x -= 1
+    else:
+        break
+print(v)
+
